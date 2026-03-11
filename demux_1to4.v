@@ -7,7 +7,6 @@ module demux_1to4(
   output [3:0] School,
   output [3:0] RibShack
 );
-
   assign local_lib = (Enable && sel == 2'b00 ? Y : 0);
   assign fireDept = (Enable && sel == 2'b0 ? Y : 0);
   assign School = (Enable && sel == 2'b10 ? Y : 0);
